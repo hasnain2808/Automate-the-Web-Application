@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="68440" started-at="2020-07-16T12:03:53Z" finished-at="2020-07-16T12:05:02Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="68440" started-at="2020-07-16T12:03:53Z" finished-at="2020-07-16T12:05:02Z">
+      <class name="com.moha.TestRegister">
+        <test-method status="PASS" signature="createWebDriver(java.lang.String)[pri:0, instance:com.moha.TestRegister@56ef9176]" name="createWebDriver" is-config="true" duration-ms="3985" started-at="2020-07-16T12:04:14Z" finished-at="2020-07-16T12:04:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E:\\workspaces\\chromedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createWebDriver -->
+        <test-method status="FAIL" signature="testRegister(java.lang.String)[pri:0, instance:com.moha.TestRegister@56ef9176]" name="testRegister" duration-ms="14573" started-at="2020-07-16T12:04:18Z" finished-at="2020-07-16T12:04:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[basfgjgsdh@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Please use a different email Address, Account with this email id exists expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Please use a different email Address, Account with this email id exists expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.moha.TestRegister.testRegister(TestRegister.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method status="PASS" signature="closeWebDrier()[pri:0, instance:com.moha.TestRegister@56ef9176]" name="closeWebDrier" is-config="true" duration-ms="882" started-at="2020-07-16T12:04:33Z" finished-at="2020-07-16T12:04:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebDrier -->
+      </class> <!-- com.moha.TestRegister -->
+      <class name="com.moha.TestSearch">
+        <test-method status="PASS" signature="createWebDriver(java.lang.String)[pri:0, instance:com.moha.TestSearch@cb644e]" name="createWebDriver" is-config="true" duration-ms="6019" started-at="2020-07-16T12:03:53Z" finished-at="2020-07-16T12:03:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E:\\workspaces\\chromedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createWebDriver -->
+        <test-method status="PASS" signature="testSearch(java.lang.String)[pri:0, instance:com.moha.TestSearch@cb644e]" name="testSearch" duration-ms="13818" started-at="2020-07-16T12:03:59Z" finished-at="2020-07-16T12:04:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Printed Summer Dress]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="closeWebDrier()[pri:0, instance:com.moha.TestSearch@cb644e]" name="closeWebDrier" is-config="true" duration-ms="1007" started-at="2020-07-16T12:04:13Z" finished-at="2020-07-16T12:04:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebDrier -->
+      </class> <!-- com.moha.TestSearch -->
+      <class name="com.moha.TestLogin">
+        <test-method status="PASS" signature="createWebDriver(java.lang.String)[pri:0, instance:com.moha.TestLogin@5cb9f472]" name="createWebDriver" is-config="true" duration-ms="3329" started-at="2020-07-16T12:04:34Z" finished-at="2020-07-16T12:04:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E:\\workspaces\\chromedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createWebDriver -->
+        <test-method status="PASS" signature="testInvalidLogin(java.lang.String, java.lang.String)[pri:1, instance:com.moha.TestLogin@5cb9f472]" name="testInvalidLogin" duration-ms="13570" started-at="2020-07-16T12:04:37Z" finished-at="2020-07-16T12:04:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hasnain2808@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[moha352]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method status="PASS" signature="testValidLogin(java.lang.String, java.lang.String)[pri:2, instance:com.moha.TestLogin@5cb9f472]" name="testValidLogin" duration-ms="8530" started-at="2020-07-16T12:04:51Z" finished-at="2020-07-16T12:04:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hasnain2808@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[moha123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="testLogOut()[pri:3, instance:com.moha.TestLogin@5cb9f472]" name="testLogOut" duration-ms="1964" started-at="2020-07-16T12:04:59Z" finished-at="2020-07-16T12:05:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogOut -->
+        <test-method status="PASS" signature="closeWebDrier()[pri:0, instance:com.moha.TestLogin@5cb9f472]" name="closeWebDrier" is-config="true" duration-ms="712" started-at="2020-07-16T12:05:01Z" finished-at="2020-07-16T12:05:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebDrier -->
+      </class> <!-- com.moha.TestLogin -->
+      <class name="com.moha.TestCart">
+        <test-method status="PASS" signature="createWebDriver(java.lang.String)[pri:0, instance:com.moha.TestCart@13805618]" name="createWebDriver" is-config="true" duration-ms="6016" started-at="2020-07-16T12:03:53Z" finished-at="2020-07-16T12:03:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E:\\workspaces\\chromedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createWebDriver -->
+        <test-method status="PASS" signature="testCart()[pri:0, instance:com.moha.TestCart@13805618]" name="testCart" duration-ms="23160" started-at="2020-07-16T12:03:59Z" finished-at="2020-07-16T12:04:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCart -->
+        <test-method status="PASS" signature="closeWebDrier()[pri:0, instance:com.moha.TestCart@13805618]" name="closeWebDrier" is-config="true" duration-ms="727" started-at="2020-07-16T12:04:23Z" finished-at="2020-07-16T12:04:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebDrier -->
+      </class> <!-- com.moha.TestCart -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

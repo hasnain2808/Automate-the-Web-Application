@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="password" value="moha123"/>
+  <parameter name="emailAddrRegister" value="basfgjgsdh@gmail.com"/>
+  <parameter name="invPassword" value="moha352"/>
+  <parameter name="driverLink" value="E:\\workspaces\\chromedriver.exe"/>
+  <parameter name="searchKey" value="Printed Summer Dress"/>
+  <parameter name="emailAddrLogin" value="hasnain2808@gmail.com"/>
+  <test thread-count="2" name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.moha.TestRegister">
+        <methods>
+          <include name="createWebDriver"/>
+          <include name="testRegister" invocation-numbers="0"/>
+          <include name="closeWebDrier"/>
+        </methods>
+      </class> <!-- com.moha.TestRegister -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

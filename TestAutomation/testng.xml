@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite">
+
+	<parameter name="driverLink"
+		value="E:\\workspaces\\chromedriver.exe"></parameter>
+	<!-- Please do not edit the following parameters unless you create an account 
+		with the specific details. Else, Tests will fail -->
+	<parameter name="emailAddrLogin"
+		value="hasnain2808@gmail.com"></parameter>
+	<parameter name="password" value="moha123"></parameter>
+	<parameter name="invPassword" value="moha352"></parameter>
+	<parameter name="searchKey" value="Printed Summer Dress"></parameter>
+
+
+	<!-- If the register test fails edit this email to a new email -->
+	<parameter name="emailAddrRegister"
+		value="basfgjgsdh@gmail.com"></parameter>
+
+	<test thread-count="2" name="Test" parallel="classes">
+		<classes>
+			<class name="com.moha.TestLogin" />
+			<class name="com.moha.TestSearch" />
+			<class name="com.moha.TestCart" />
+			<class name="com.moha.TestRegister" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
