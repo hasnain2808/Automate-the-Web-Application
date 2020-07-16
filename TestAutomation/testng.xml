@@ -15,7 +15,7 @@
 
 	<!-- If the register test fails edit this email to a new email -->
 	<parameter name="emailAddrRegister"
-		value="basfgjgsdh@gmail.com"></parameter>
+		value="jgfdslaieufJsk@gmail.com"></parameter>
 
 	<test thread-count="2" name="Test" parallel="classes">
 		<classes>

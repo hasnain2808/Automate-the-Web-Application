@@ -26,6 +26,7 @@ public class TestRegister {
 	@Parameters({"driverLink"})
 	public void createWebDriver(String driverLink) {
 		System.setProperty("webdriver.chrome.driver", driverLink);
+//		a.	Start Chromedriver
 		webdriver = new ChromeDriver();
 		timeout = Duration.ofSeconds(5);
 		wait = new WebDriverWait(webdriver, timeout);
@@ -34,23 +35,31 @@ public class TestRegister {
 	@Test
 	@Parameters({ "emailAddrRegister" })
 	public void testRegister(String emailAddrRegister) {
+//		b.	Go to Url http://automationpractice.com/
 		String actualUrl = "http://automationpractice.com/";
 		webdriver.get(actualUrl);
+//		c.	Wait for the sign button to load
+//		d.	Click on Sign in Button
 		webdriver.findElement(By.linkText("Sign in")).click();
+//		f.	Click on email textbox
+//		g.	Enter new Email Id
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email_create")));
 		WebElement email = webdriver.findElement(By.id("email_create"));
 		email.click();
 		email.sendKeys(emailAddrRegister);
+//		h.	Click on Create new Account
 		webdriver.findElement(By.id("SubmitCreate")).click();
-
+//		i.	Throw exception if email Id already used
+//		j.	Wait for gender radio button to become available
 		try {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("id_gender1")));
 
 		} catch (TimeoutException e) {
 			assertTrue(false, "Please use a different email Address, Account with this email id exists");
 		}
+//		k.	Select Male
 		webdriver.findElement(By.id("id_gender1")).click();
-
+//		l.	Click on input controls to enter First name (By Id), Last Name (By Id), Password (By Id), birthdate (By xpath), Birth Month (By xpath), Birth year(By xpath), address First Name (By Id), Address Last Name (By Id), Address Line 1 (By Id), Address Line 2 (By Id), City (By Id), State (By xpath), postcode (By Id), country (By Id), phone number (By Id), mobile number (By Id), address alias (By Id)
 		WebElement firstName = webdriver.findElement(By.id("customer_firstname"));
 		firstName.click();
 		firstName.sendKeys("Babu");
@@ -102,8 +111,11 @@ public class TestRegister {
 		WebElement alias = webdriver.findElement(By.id("alias"));
 		alias.click();
 		alias.sendKeys("address alias");
+//		m.	Click on the register button
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("submitAccount")));
 		webdriver.findElement(By.id("submitAccount")).click();
+//		n.	Wait for the page to load
+//		o.	Verify name displayed in top bar to verify successful register
 		assertTrue(webdriver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a/span")).getText()
 				.equals("Babu Sharma"));
 		System.out.println("Register test Successfull");

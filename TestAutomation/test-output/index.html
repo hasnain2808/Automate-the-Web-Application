@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.moha.TestRegister" hash-for-method="testRegister(basfgjgsdh@gmail.com)">testRegister(basfgjgsdh@gmail.com)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -131,6 +117,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.moha.TestRegister" hash-for-method="testRegister(jgfdslaieufJsk@gmail.com)">testRegister(jgfdslaieufJsk@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.moha.TestSearch" hash-for-method="testSearch(Printed Summer Dress)">testSearch(Printed Summer Dress)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -151,29 +142,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.moha.TestRegister</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testRegister(basfgjgsdh@gmail.com)">
-                  </a> <!-- testRegister(basfgjgsdh@gmail.com) -->
+                  <a name="testRegister(jgfdslaieufJsk@gmail.com)">
+                  </a> <!-- testRegister(jgfdslaieufJsk@gmail.com) -->
                   <span class="method-name">testRegister</span>
-                  <span class="parameters">(basfgjgsdh@gmail.com)</span>
-                  <div class="stack-trace">java.lang.AssertionError: Please use a different email Address, Account with this email id exists expected [true] but found [false]
-	at com.moha.TestRegister.testRegister(TestRegister.java:50)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 13 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(jgfdslaieufJsk@gmail.com)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -247,7 +231,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;parameter name=&quot;password&quot; value=&quot;moha123&quot;/&gt;
-  &lt;parameter name=&quot;emailAddrRegister&quot; value=&quot;basfgjgsdh@gmail.com&quot;/&gt;
+  &lt;parameter name=&quot;emailAddrRegister&quot; value=&quot;jgfdslaieufJsk@gmail.com&quot;/&gt;
   &lt;parameter name=&quot;invPassword&quot; value=&quot;moha352&quot;/&gt;
   &lt;parameter name=&quot;driverLink&quot; value=&quot;E:\\workspaces\\chromedriver.exe&quot;/&gt;
   &lt;parameter name=&quot;searchKey&quot; value=&quot;Printed Summer Dress&quot;/&gt;
@@ -301,27 +285,27 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCart')
 data.setCell(0, 2, 'com.moha.TestCart')
-data.setCell(0, 3, 23160);
+data.setCell(0, 3, 40588);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testRegister')
 data.setCell(1, 2, 'com.moha.TestRegister')
-data.setCell(1, 3, 14573);
+data.setCell(1, 3, 27772);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testSearch')
-data.setCell(2, 2, 'com.moha.TestSearch')
-data.setCell(2, 3, 13818);
+data.setCell(2, 1, 'testInvalidLogin')
+data.setCell(2, 2, 'com.moha.TestLogin')
+data.setCell(2, 3, 13663);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testInvalidLogin')
-data.setCell(3, 2, 'com.moha.TestLogin')
-data.setCell(3, 3, 13570);
+data.setCell(3, 1, 'testSearch')
+data.setCell(3, 2, 'com.moha.TestSearch')
+data.setCell(3, 3, 12389);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testValidLogin')
 data.setCell(4, 2, 'com.moha.TestLogin')
-data.setCell(4, 3, 8530);
+data.setCell(4, 3, 9763);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testLogOut')
 data.setCell(5, 2, 'com.moha.TestLogin')
-data.setCell(5, 3, 1964);
+data.setCell(5, 3, 6143);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -362,72 +346,76 @@ return data;
               <div class="chronological-class-name">com.moha.TestCart</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createWebDriver(E:\\workspaces\\chromedriver.exe)</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">testCart</span>
-                <span class="method-start">6025 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.moha.TestSearch</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testSearch(Printed Summer Dress)</span>
-                <span class="method-start">6025 ms</span>
+                <span class="method-start">5615 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.moha.TestCart</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCart</span>
+                <span class="method-start">5615 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.moha.TestSearch</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">closeWebDrier</span>
-                <span class="method-start">19845 ms</span>
+                <span class="method-start">18007 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.moha.TestRegister</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createWebDriver(E:\\workspaces\\chromedriver.exe)</span>
-                <span class="method-start">20853 ms</span>
+                <span class="method-start">20061 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testRegister(basfgjgsdh@gmail.com)</span>
-                <span class="method-start">24838 ms</span>
+                <span class="method-name">testRegister(jgfdslaieufJsk@gmail.com)</span>
+                <span class="method-start">24207 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.moha.TestCart</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">closeWebDrier</span>
-                <span class="method-start">29186 ms</span>
+                <span class="method-start">46205 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.moha.TestRegister</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">closeWebDrier</span>
-                <span class="method-start">39415 ms</span>
+                <span class="method-start">51983 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.moha.TestLogin</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createWebDriver(E:\\workspaces\\chromedriver.exe)</span>
-                <span class="method-start">40298 ms</span>
+                <span class="method-start">52750 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testInvalidLogin(hasnain2808@gmail.com, moha352)</span>
-                <span class="method-start">43628 ms</span>
+                <span class="method-start">56252 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testValidLogin(hasnain2808@gmail.com, moha123)</span>
-                <span class="method-start">57200 ms</span>
+                <span class="method-start">69916 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testLogOut</span>
-                <span class="method-start">65738 ms</span>
+                <span class="method-start">79686 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeWebDrier</span>
-                <span class="method-start">67702 ms</span>
+                <span class="method-start">85829 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

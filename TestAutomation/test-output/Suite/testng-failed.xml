@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="password" value="moha123"/>
-  <parameter name="emailAddrRegister" value="basfgjgsdh@gmail.com"/>
+  <parameter name="emailAddrRegister" value="bdasfgjgsdh@gmail.com"/>
   <parameter name="invPassword" value="moha352"/>
   <parameter name="driverLink" value="E:\\workspaces\\chromedriver.exe"/>
   <parameter name="searchKey" value="Printed Summer Dress"/>
